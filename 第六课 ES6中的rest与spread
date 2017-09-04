@@ -22,7 +22,7 @@ fun('a', 'b', 'c');
 
 ### spread
 
-spread用于分割数组，作用类似于split，写法和rest非常相似，但是作用恰好相反
+spread用于分割数组/字符串，作用类似于split，写法和rest非常相似，但是作用恰好相反
 
 1） 基础示例
 
@@ -46,6 +46,13 @@ function fun(...vals){
     console.log(newArr);
 }
 fun('d', 'e', 'f');
+```
+
+3） 字符串分割
+
+```
+let val = 'hello';
+console.log(...val);
 ```
 
 ### rest与spread的区别
