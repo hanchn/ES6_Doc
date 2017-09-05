@@ -72,4 +72,25 @@ console.log(arr.find(function(val, key, arr){
 })); // 0
 ```
 
+### 查询拓展之includes
+
+includes类似于find，用于查询数组值是否存在，查询结果会返回布尔值
+
+1）参数设置
+
+数组.includes(查询值，查询的起始位置)
+
+1） 基本查询：
+
+```
+let arr = [1, 2, 3];
+arr.includes(1);  // true
+```
+
+2 设置查询位查询
+
+```
+let arr = [1, 2, 3];
+arr.includes(1, 2);  // false
+```
 
