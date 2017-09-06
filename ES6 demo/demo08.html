@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // 缺陷非常大  数组构造函数直接定义数组对象的差异性较大
+    // var arr = new Array(); // [] 空数组
+    // var arr = new Array(3); // [undefined, undefined, undefined] 长度为3的数组
+    // var arr = new Array(1, 2, 3); // [1, 2, 3]
+    // 保险  保证我们在创建数组的同时 避免了 二义性
+    var arr =  Array.of(1, 2, 3); // 创建空数组的另外一种方式
+    console.log(arr);
+</script>

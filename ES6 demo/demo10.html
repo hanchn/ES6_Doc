@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let arr = ['a', 'b', 'c', 'd', 'e', 'f'];
+    console.log(arr.find(function(val, key, arr){ // 三个参数
+        //   console.log(val + ' ' + key + ' ' + arr);
+        if(val == 'g'){
+            // console.log(val + " " + key);
+            return val;
+        }
+    }));
+
+    console.log(arr.findIndex(function(val, key, arr){ // 三个参数
+        //   console.log(val + ' ' + key + ' ' + arr);
+        if(val == 'g'){
+            // console.log(val + " " + key);
+            return val;
+        }
+    }));
+    // 第一个参数表示是否包含某个值
+    // 从第索引位开始查询
+    // 返回一个  布尔值 
+    console.log(arr.includes('a', 3)); //包含查询 
+</script>

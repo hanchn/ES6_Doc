@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button">
+    <input type="button">
+    <input type="button">
+    <input type="button">
+    <input type="button">
+</body>
+</html>
+<script>
+    // ES Ecmascript // Javascript 实现标准  Typescript
+    // ES2018 ES6 ES8
+    // ES6  
+
+    // function fun(){
+    //     var val = 10;
+    // }
+    // console.log(val);
+    // {} // 花括号作用域
+    // var // 也是定义变量  fun 函数方法
+    // var a = 10; // 定义了两个a 定义两次
+    // var a = 20; // 
+    // let // 定义变量的
+    // let 是不能重复定义的
+    // let是受制于花括号 作用域的
+    let btns = document.querySelectorAll('input');
+    for(let i = 0; i < btns.length; i ++){
+        // let 定义的变量 受制于 {}作用域
+        btns[i].onclick = function(){
+            alert(i);
+        }
+    }
+</script>

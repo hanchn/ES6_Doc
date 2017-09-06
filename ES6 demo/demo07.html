@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // var arr = []; // 构造函数创建数组的语法糖
+    // var arr = new Array(); // 构造函数去创建数组
+    // var arr = Array(); //把构造函数复制了一遍 直接用了构造函数吧
+    // // 一个数组的基本组成的结构
+    var obj = {
+        0: 'a',
+        1: 'b',
+        2: 'c',
+        'length': 3 
+    }
+
+    // ES6中拓展了模拟数组生成数组的一种方法
+    // Array.from
+
+     var arr = Array.from(obj);
+     console.log(arr);
+
+    var newArr = ['a', 'b', 'c'];
+    console.log(newArr);
+
+</script>

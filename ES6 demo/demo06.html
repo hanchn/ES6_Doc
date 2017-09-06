@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+// rest spread
+// function fun(a, b, c, d, e){
+//     var len = arguments.length;
+//     for(var i = 0; i < len i++){
+//         console.loga(arguments[i]);
+//     }
+// }
+
+// ... rest 操作符
+function fun(...vals){ // 我们输入的任何值的集合
+    for(let i = 0; i < vals.length; i++){
+        console.log(vals[i]); // vals 数组
+    }
+    let arr = ['a', 'b', 'c', ...vals]; // spread操作符
+    console.log(arr);
+}
+
+fun(1, 2, 3);
+</script>

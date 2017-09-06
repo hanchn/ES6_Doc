@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+// 复制数组内部的值，并且放置到当前数组中的某个位置
+// 内部有三个参数
+// 第一个参数x将复制得到的数据覆盖到哪儿 不允许省略的
+// 从（索引）哪边开始进行复制  
+// 结束索引位
+let arr = [1, 2, 3, 4, 5, 6, 7 , 8, 9, 0];
+// arr.copyWithin(2);  
+// console.log(arr);  
+
+arr.copyWithin(0, 2, 4);
+console.log(arr); 
+</script>

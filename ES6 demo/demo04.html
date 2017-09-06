@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // function fun(val){
+    //     var val_ = val || 10; // ES6 之前默认值的设置
+    //     console.log(val_)
+    // }
+
+    // fun(20);
+
+    // 通过解构赋值 进行默认值的赋值
+    
+    // let [a = 10, b] = [,];
+    // console.log(a);
+    // console.log(b);
+
+    // function fun([a=10, b]){
+    //    console.log(a + b);
+    // }
+
+    // fun([, 20]);
+
+    // let {a: b = 10} = {}
+    // console.log(b);
+
+    // let {a: [b]} = {a: [20]};
+
+    function fun(a = 10){
+        console.log(a);
+    }
+
+    fun();
+</script>
