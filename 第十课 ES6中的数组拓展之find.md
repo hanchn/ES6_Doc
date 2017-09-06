@@ -47,8 +47,8 @@ arr.findIndex(function(val, key, arr){
 findIndex与find非常相似，甚至基本参数都一致。
 如果为findIndex与find设置返回值，返回值的参数为当前符合条件的第一个参数值。
 
-**find返回当前符合条件的val值**
-**findIndex返回当前符合条件的布尔值（符合条件返回1，否则-1）**
+**find返回当前符合条件的val值，如果没查询到则返回undefined**
+**findIndex返回当前符合条件的索引，如果没查询到则返回-1**
 
 1）find返回值示例
 
