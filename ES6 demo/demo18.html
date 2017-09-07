@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+// // Generator 不是构造函数 只是一个普通的函数 Promise 是 构造函数
+// // 带有星号的函数
+// // 用来做异步变成的另外一种解决方案
+function *fun(){ // Generator函数的写法
+    yield 'Hi' + '你好!';  // 分支 相当于一个返回值 返回的是一个对象
+    yield 10 + 20; 
+    console.log(yield + 10);
+    return 'Hello World !';
+}
+
+// for(let val of fun()){
+//     console.log(val);
+// }
+
+// let arr = [...fun()];
+// console.log(arr);
+
+let arr = Array.from(fun());
+console.log(arr);
+
+// // {'value': '返回的具体的参数值', done: '表示我们所有的内容是否已经执行完毕了，如果执行完毕则true/ 否则 false'}
+
+// let f = fun(); // 已经执行了 generator函数 但是没有任何结果
+
+// console.log(f.next()); // 需要配合next去运行 我们的fun星号函数
+// console.log(f.next());
+// console.log(f.next()); // 如果最终已经执行完毕了 输出undefined 找不到任何内容了
+
+// function *fun(){
+//     console.log(1 + (yield)); // Nan
+//     console.log(0 + (yield)); // Nan
+//     return 'Over'; 
+// }
+
+// let funs = fun();
+// funs.next();
+// funs.next(2);
+// funs.next();
+
+// function test(){
+//    alert(1);
+// }
+
+// function *fun(){
+//     yield test();
+// }
+
+// let f = fun();
+// f.next();
+</script>

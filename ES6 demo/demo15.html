@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+// Set它并不是数组 Set的索引和值是一样的（或者说 Set压根就没有索引）   
+// Set 这是一个构造函数
+// 构造函数的首字母是大写的
+// let arr = new Array(); // 创建一个数组
+// Set用于构建  去重的数组  
+// Set结构类似于数组 区别是没有重复的值 自动去重了
+let set = new Set(); // 创建了一个Set实例    
+set.add(1).add(2).add(3);  // 可以进行链式调用
+// set.delete(1);
+// set.clear(); // 清除所有内容
+console.log(set.has(1)); // true/false
+console.log(set.size)
+console.log(set);
+
+for(let key of set.keys()){
+   console.log(key);
+}
+
+for(let val of set.valus()){
+   console.log(val);
+}
+
+for(let [key, val] of set.entries()){
+   console.log(key + val);
+}
+</script>

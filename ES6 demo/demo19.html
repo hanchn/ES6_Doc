@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+// 类
+// 就是构造函数的语法糖
+// 两个方法
+// class Persion { 
+//     constructor (x, y){ // 构造方法
+//         this.x = x;
+//         this.y = y;
+//     };
+
+//     plus(){
+//         return this.x + this.y;
+//     }
+//     // toString(){
+//     // };
+// }   
+
+// let men = new Persion(10, 20);
+// console.log(men.plus()); 
+
+class Per{
+    constructor(val){
+        this.val = val;
+    };
+
+    say(){
+        console.log(this.val);
+    }
+}
+// 继承
+class Son extends Per{
+    constructor(val){
+        super(val); // 表示我们的父的对象
+        this.val = val;
+    };
+}
+
+let p = new Per('Hello World !');
+p.say();
+
+let s = new Son('测试一下说话');
+s.say();
+</script>

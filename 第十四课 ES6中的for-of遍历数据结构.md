@@ -29,14 +29,8 @@ for(let i = 0; i < arr.length; i ++){
 
 2）for in 遍历对象
 
-for-in主要用于JSON数据遍历，不太适合数组遍历
-
 ```
-let obj = {
-    'uName': 'admin',
-    'uPwd': '123',
-    'uGender': 'men'
-}
+let arr = ['a', 'b', 'c'];
 for(let i in obj){
     console.log('key: ' + i + ' val: ' + obj[i]);
 }
@@ -58,7 +52,7 @@ arr.forEach(function(val, key, arr){
 
     a）for循环只能遍历数组结构，其他数据结构及ES6中新增的数据结构爱莫能助
 
-    b）for-in遍历方式只能遍历出键值，无法获得键名
+    b）for-in遍历方式只能遍历出键值，无法获得键名（新增数据结构键名复杂：允许为对象、字符、数字等）
 
     c）forEach缺陷极大，无法中断遍历和获取更新后的数组，遍历数据结果容易异常
 

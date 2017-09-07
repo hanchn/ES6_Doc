@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+// setTimeout(function(data){
+//     alert(data);
+// }, 5000, 'Hello World !')    
+// ES6中为了处理异步操作而产生的一种构造函数
+// new Promise(); // 构造函数
+
+// let pro = new Promise(function(reslove, reject){
+//        if(/*执行成功了*/){
+//            reslove();  // 如果代码执行回调
+//        } else {
+//            reject();  // 回调 报错的
+//        }
+// });
+
+// 题目一 倒计时效果 5秒之后触发一个Hello World!
+
+// function setTime(time){
+//     return new Promise(function(reslove, reject){
+//          setTimeout(reslove, time);
+//     })
+// }
+
+// setTime(5000).then(function(){
+//      alert('Hello World !');
+// })
+
+// 题目二 懒加载效果
+
+// function lazyLoad(arr){
+//     return new Promise(function(reslove, reject){
+//         let len = arr.length;
+//         let load = 0;
+//         let imgs = {};
+
+//         for(let i = 0; i < arr.length; i++){
+//             let img = new Image();
+//             img.onload = function(){
+//                 load++;
+//                 if(load == len){
+//                     reslove(imgs);
+//                 }
+//             }
+//             img.src = arr[i];
+//             let name = arr[i].split('.')[0];
+//             imgs[name] = img;
+//         }
+
+//         if(err){
+//             reject(err);
+//         }
+//     })
+// }
+
+
+// lazyLoad(arr).then(function(data){
+    
+// }).catch(function(err){
+//    console.log(err);
+// })
+
+</script>

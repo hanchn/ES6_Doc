@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+// 新的数据类型 Map  后端中常见的数据格式
+// Map类似于JSON数据格式 但是它不是JSOON
+// Map的特点是： 键 是无所谓任何类型的 也可以进行链式调用
+// 构造函数
+let arr = [];
+let map = new Map([[arr, 'test'], ['age', '20'],]);
+map.set('gender', 'men'); // 设置属性
+// map.delete(arr); // 设置属性
+// console.log(map.has('age'));
+// console.log(map.get('gender'));
+// console.log(map.size);
+// console.log(map);
+
+for(let key of map.keys()){
+    console.log(key);
+}
+
+for(let val of map.values()){
+    console.log(val);
+}
+
+
+for(let [key, val] of map.entries()){
+    console.log(key + " " + val);
+}
+</script>
